@@ -2,7 +2,7 @@
 
 [![PyPI version](https://badge.fury.io/py/django-api-decorators.svg)](https://badge.fury.io/py/django-api-decorators)
 
-Tiny decorator functions to make it easier to build an API using Django in ~100 LoC.
+Tiny decorator functions to make it easier to build an API using Django in ~100 LoC (shorter than this README!)
 
 
 ## Table of Contents
