@@ -42,7 +42,8 @@ setup(
         'Framework :: Django :: 1.10',
         'Framework :: Django :: 1.11'
     ],
-    keywords=('django api rest ad-hoc decorators json dict'),
+    keywords=('django api rest ad-hoc decorator json dict form formset ' +
+              'validation'),
     py_modules=['decorators'],
     python_requires='>=2.7, <4',
     project_urls={  # Optional
