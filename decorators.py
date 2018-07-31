@@ -1,6 +1,7 @@
 import json
 from functools import wraps
 
+import django
 from django.http import HttpResponse, HttpResponseNotAllowed
 
 
@@ -26,7 +27,13 @@ def require_auth(func):
     """
     @wraps(func)
     def func_wrapper(request, *args, **kwargs):
-        if not request.user.is_authenticated():
+        # backward compatibility for Django < 1.10
+        if django.VERSION < (1, 10):
+            is_authenticated = request.user.is_authenticated()
+        else:
+            is_authenticated = request.user.is_authenticated
+
+        if not is_authenticated:
             return HttpResponse(status=401)
         return func(request, *args, **kwargs)
     return func_wrapper

@@ -40,7 +40,9 @@ setup(
         'Framework :: Django :: 1.8',
         'Framework :: Django :: 1.9',
         'Framework :: Django :: 1.10',
-        'Framework :: Django :: 1.11'
+        'Framework :: Django :: 1.11',
+        'Framework :: Django :: 2.0',
+        'Framework :: Django :: 2.1',
     ],
     keywords=('django api rest ad-hoc decorator json dict form formset ' +
               'validation'),

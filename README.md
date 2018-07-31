@@ -25,8 +25,7 @@ It is expected that you already have Django installed
 
 _This was originally used in an older Django 1.5 codebase with Python 2.7._
 
-Should work with Django 1.x with Python 2.7 and Python 3.x
-- The `@require_auth` decorator will have some problems with Django 2.x as [`request.user.is_authenticated()` has been removed and replaced with `request.user.is_authenticated`](https://docs.djangoproject.com/en/2.0/releases/2.0/#features-removed-in-2-0)
+Should work with Django 1.x-2.x and with Python 2.7-3.x
 - Likely works with Django 0.95-0.99 as well, didn't check any earlier versions' release notes
 - `2to3` shows that there is nothing to change, so should be compatible with Python 3.x
 - Have not confirmed if this works with earlier versions of Python.
