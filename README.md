@@ -10,7 +10,8 @@ Tiny decorator functions to make it easier to build an API using Django in ~100 
 I. [Installation](#installation) <br />
 II. [Usage](#usage) <br />
 III. [How it Works](#how-it-works) <br />
-IV. [Backstory](#backstory)
+IV. [Related Libraries](#related-libraries) <br />
+V. [Backstory](#backstory)
 
 
 ## Installation
@@ -143,6 +144,14 @@ All of the decorators currently just perform a check against the `request` objec
 
 I'd encourage you to read the source code, since it's shorter than this README :)
 
+
+## Related Libraries
+
+1. [django-serializable-model](https://github.com/agilgur5/django-serializable-model)
+  - `Django classes to make your models, managers, and querysets serializable, with built-in support for related objects in ~100 LoC`
+
+
+<br>
 
 ## Backstory
 
