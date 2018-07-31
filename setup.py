@@ -14,8 +14,8 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 setup(
     name='django-api-decorators',
     version='0.0.1',
-    description=('Decorators to make your life easier when building an API ' +
-                 'using Django'),
+    description=('Tiny decorator functions to make it easier to build an ' +
+                 'API using Django in ~100 LoC'),
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/agilgur5/django-api-decorators',
