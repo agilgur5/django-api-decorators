@@ -4,6 +4,9 @@
 [![releases](https://img.shields.io/github/tag-pre/agilgur5/django-api-decorators.svg)](https://github.com/agilgur5/django-api-decorators/releases)
 [![commits](https://img.shields.io/github/commits-since/agilgur5/django-api-decorators/latest.svg)](https://github.com/agilgur5/django-api-decorators/commits/master)
 
+[![dm](https://img.shields.io/pypi/dm/django-api-decorators.svg)](https://pypi.org/project/django-api-decorators/)
+[![dw](https://img.shields.io/pypi/dw/django-api-decorators.svg)](https://pypi.org/project/django-api-decorators/)
+
 Tiny decorator functions to make it easier to build an API using Django in ~100 LoC (shorter than this README!)
 
 ## Table of Contents
