@@ -4,7 +4,6 @@
 
 Tiny decorator functions to make it easier to build an API using Django in ~100 LoC (shorter than this README!)
 
-
 ## Table of Contents
 
 I. [Installation](#installation) <br />
@@ -12,7 +11,6 @@ II. [Usage](#usage) <br />
 III. [How it Works](#how-it-works) <br />
 IV. [Related Libraries](#related-libraries) <br />
 V. [Backstory](#backstory)
-
 
 ## Installation
 
@@ -27,6 +25,7 @@ It is expected that you already have Django installed
 _This was originally used in an older Django 1.5 codebase with Python 2.7._
 
 Should work with Django 1.x-2.x and with Python 2.7-3.x
+
 - Likely works with Django 0.95-0.99 as well, didn't check any earlier versions' release notes
 - `2to3` shows that there is nothing to change, so should be compatible with Python 3.x
 - Have not confirmed if this works with earlier versions of Python.
@@ -34,7 +33,6 @@ Should work with Django 1.x-2.x and with Python 2.7-3.x
 Please submit a PR or file an issue if you have a compatibility problem or have confirmed compatibility on versions.
 
 <br>
-
 
 ## Usage
 
@@ -63,7 +61,6 @@ def get_favorites(request):
     ...
 
 ```
-
 
 One can add more authorization checks on the User, such as for specific user types,
 by building on top of the `@require_auth` decorator. For instance:
@@ -137,19 +134,16 @@ def bulk_create_posts(request, cd_list):
 
 <br>
 
-
 ## How it works
 
 All of the decorators currently just perform a check against the `request` object, have an early return if the request is invalid, and otherwise let the next function execute. Some of them add a keyword argument when calling the next function so that the interpreted data can be used within it (like with the cleaned dictionaries of forms, which are added as a `kwarg` of the keyword `cd`).
 
 I'd encourage you to read the source code, since it's shorter than this README :)
 
-
 ## Related Libraries
 
-1. [django-serializable-model](https://github.com/agilgur5/django-serializable-model)
+- [django-serializable-model](https://github.com/agilgur5/django-serializable-model)
   - `Django classes to make your models, managers, and querysets serializable, with built-in support for related objects in ~100 LoC`
-
 
 <br>
 
