@@ -1,6 +1,6 @@
 # django-api-decorators
 
-[![PyPI version](https://badge.fury.io/py/django-api-decorators.svg)](https://badge.fury.io/py/django-api-decorators)
+[![PyPI version](https://img.shields.io/pypi/v/django-api-decorators.svg)](https://pypi.org/project/django-api-decorators/)
 
 Tiny decorator functions to make it easier to build an API using Django in ~100 LoC (shorter than this README!)
 
