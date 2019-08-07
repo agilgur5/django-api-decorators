@@ -13,7 +13,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='django-api-decorators',
-    version='0.0.2',
+    version='0.0.3',
     description=('Tiny decorator functions to make it easier to build an ' +
                  'API using Django in ~100 LoC'),
     long_description=long_description,
