@@ -45,7 +45,7 @@ Please submit a PR or file an issue if you have a compatibility problem or have 
 `@method_exclusive`, per docstring: `Checks if request.method is equal to method, if not, returns a 405 not allowed response`. Example:
 
 ```python
-from django-api-decorators import method_exlusive
+from django_api_decorators import method_exlusive
 
 @method_exclusive('GET')
 def get_latest_public_posts(request):
@@ -58,7 +58,7 @@ def get_latest_public_posts(request):
 `@require_auth`, per docstring: `Checks if the request was made by an authenticated user, and if not, returns a 401 unauthorized response`. Example:
 
 ```python
-from django-api-decorators import method_exclusive, require_auth
+from django_api_decorators import method_exclusive, require_auth
 
 @method_exclusive('GET')
 @require_auth
@@ -75,7 +75,7 @@ by building on top of the `@require_auth` decorator. For instance:
 from functools import wraps
 
 from django.http import HttpResponse
-from django-api-decorators import require_auth
+from django_api_decorators import require_auth
 
 def tenant_exclusive(func):
     """
@@ -97,7 +97,7 @@ def tenant_exclusive(func):
 
 ```python
 from django.shortcuts import get_object_or_404
-from django-api-decorators import method_exclusive, clean_form, require_auth
+from django_api_decorators import method_exclusive, clean_form, require_auth
 
 from posts.models import Post
 from posts.forms import AddFavForm
@@ -117,7 +117,7 @@ def add_fav(request, cd):
 `@clean_forms`, per docstring: `Cleans the data in the POST or GET params using the form_class specified. Responds with a 400 bad request if any of the forms are invalid with the errors specified in the form as JSON. Adds the cleaned data as a kwarg (cd_list) to the decorated function`. Example:
 
 ```python
-from django-api-decorators import method_exclusive, clean_forms, require_auth
+from django_api_decorators import method_exclusive, clean_forms, require_auth
 
 from posts.models import Post
 from posts.forms import CreatePostForm

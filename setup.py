@@ -47,7 +47,12 @@ setup(
     ],
     keywords=('django api rest ad-hoc decorator json dict form formset ' +
               'validation'),
-    py_modules=['decorators'],
+    py_modules=[
+        'django_api_decorators',
+        # this is the original, unintended name, and should be removed in the
+        # first breaking/major release, v1.0.0. See `decorators.py` comment.
+        'decorators'
+    ],
     python_requires='>=2.7, <4',
     project_urls={  # Optional
         'Source': 'https://github.com/agilgur5/django-api-decorators/',
